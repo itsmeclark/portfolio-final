@@ -77,7 +77,7 @@ header {
     color: aqua;
     border-bottom: solid 3px aqua;
 }
-.header-resume button:hover{
+/* .header-resume button:hover{
     background-color: aqua;
     transition: 0.5s ease;
 }
@@ -89,7 +89,7 @@ header {
     text-decoration: none;
     color: aqua;
     font-weight: bold;
-}
+} */
 
 /*  LANDING PAGE */
 .home-page {
@@ -100,7 +100,7 @@ header {
     align-content: center;
     width: 100vw;
     height: 100vh;
-    background-image: url('/images/eartch.gif');
+    background-image: url('../images/eartch.gif');
     position: relative;
     background-size: cover;
     background-position: center;
@@ -130,13 +130,13 @@ header {
     border-radius: 10px;
     margin: 10px;
     border: solid 1px aqua;
-    color: #050315;
+    color: black;
     background-color: aqua;
     font-weight: bold;
     cursor: pointer;
 }
 .home-page-button button:hover {
-    background-color: #050315;
+    background-color: black;
     transition: 0.3s ease;
     color: aqua;
 }
