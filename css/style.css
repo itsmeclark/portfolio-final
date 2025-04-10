@@ -100,7 +100,7 @@ header {
     align-content: center;
     width: 100vw;
     height: 100vh;
-    background-image: url('/images/eartch.gif');
+    background-image: url('./images/eartch.gif');
     position: relative;
     background-size: cover;
     background-position: center;
