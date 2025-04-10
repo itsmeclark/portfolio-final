@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
     <script src="https://kit.fontawesome.com/edcced4a53.js" crossorigin="anonymous"></script>
     <title>Web Solutions</title>
 </head>
@@ -18,7 +18,7 @@
         <!--LINKS-->
         <div class="header-link">
             <ul>
-                <li><a href="">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="">Expertise</a></li>
                 <li><a href="">Services</a></li>
                 <li><a href="contact.html">Contact</a></li>
@@ -32,44 +32,42 @@
             <button><a href="">Resume</a></button>
         </div> -->
     </header>
-    <div class="home-page" id="home-page">
-        <h1>Web <strong>Solutions</strong></h1>
-        <div>
-            Create, Maintain and Solve web problems
+    <div class="contact-form">
+        <div class="details">
+            <div class="contact-box">
+                <div class="contact-item">
+                  <div class="label" style="font-weight: bold;"><i class="fa-regular fa-envelope" style="margin:  10px;"></i>email</div>
+                  <div class="value">clarklatos123@gmail.com</div>
+                </div>
+            
+                <div class="contact-item">
+                  <div class="label" style="font-weight: bold;"><i class="fa-solid fa-phone" style="margin:  10px;"></i>number</div>
+                  <div class="value">09812400774</div>
+                </div>
+            
+                <div class="contact-item">
+                  <div class="label" style="font-weight: bold;"><i class="fa-solid fa-location-dot" style="margin:  10px;"></i> location</div>
+                  <div class="value">Cebu City</div>
+                </div>
+              </div>
         </div>
-        <div class="home-page-button">
-            <button style="cursor: pointer;">Contact<i class="fa-solid fa-arrow-right" style="border-radius: 50%;"></i></button>
-            <button style="cursor: pointer; background-color: transparent; color: aqua;">Resume<i class="fa-solid fa-arrow-down" style="border-bottom: solid 3px aqua; color: aqua;"></i></button>
-        </div>
+        <form action="">
+            <center>
+                <h2>Contact Us</h2>
+            </center>
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required /><br>
+
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" required /><br>
+
+            <label for="message">Your Message</label><br>
+            <textarea id="message" name="message" required></textarea><br>
+
+            <input type="submit" value="Send Message" />
+        </form>
     </div>
-    <div class="intertain">
-        <div class="brief-introduction">
-            <div>
-                You imagine,<br>We build it.
-            </div>
-            <img src="images/coding-pic2.jpg" alt="">
-        </div>
-        <!-- <div class="skills-caption">
-            Expertise
-        </div> -->
-    </div>
-    <div class="expertise-page">
-        <div>
-            <i class="fa-brands fa-html5"></i>
-            <h2>HTML</h2>
-            <p>Create and structure for webpages</p>
-        </div>
-        <div>
-            <i class="fa-brands fa-css3-alt"></i>
-            <h2>CSS</h2>
-            <p>Design and animation for webpages</p>
-        </div>
-        <div>
-            <i class="fa-brands fa-js"></i>
-            <h2>JAVASCRIPT</h2>
-            <p>Add a functions to webpages</p>
-        </div>
-    </div>
+    <div class="empty"></div>
     <footer>
         <div class="footer-container">
             <div class="footer-container-first">
@@ -93,6 +91,5 @@
             </div>
         </div>
     </footer>
-<script src="js/main.js"></script>
 </body>
 </html>

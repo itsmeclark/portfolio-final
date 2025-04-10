@@ -105,6 +105,7 @@ header {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    
 }
 .home-page h1 {
     font-size: 100px;
@@ -136,7 +137,7 @@ header {
     cursor: pointer;
 }
 .home-page-button button:hover {
-    background-color: black;
+    background-color: transparent;
     transition: 0.3s ease;
     color: aqua;
 }
@@ -169,16 +170,16 @@ header {
     justify-content: center;
     font-size: 70px;
     font-weight: bold;
-    color: #050315;
+    color: black;
 }
-.intertain .skills-caption {
+/* .intertain .skills-caption {
     font-size: 50px;
     position: relative;
     bottom: 70px;
     font-weight: bold;
     margin-top: 100px;
-    color: #050315;
-}
+    color: black;
+} */
 /*  EXPERTISE PAGE */
 
 .expertise-page {
@@ -206,11 +207,11 @@ header {
     bottom: 50px;
     z-index: 99;
     background-color: white;
-    color: #050315;
+    color: black;
 }
 .expertise-page div i {
     font-size: 100px;
-    color: #050315;
+    color: black;
 }
 .expertise-page div:hover {
     transform: translateY(-5%);
@@ -225,7 +226,7 @@ footer {
     justify-content: center;
     flex-direction: column;
     flex-wrap: wrap;
-    background-color: #050315;
+    background-color: black;
 
 }
 footer .footer-container {
