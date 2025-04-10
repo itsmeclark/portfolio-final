@@ -1,0 +1,251 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+}
+/*  NAVIGATION BAR */
+header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-color: transparent;
+    position: fixed;
+    z-index: 999;
+}
+.header-logo img{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    position: absolute;
+    left: 30px;
+    top: 0px;
+}
+.header-link ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    list-style-type: none;
+}
+.header-link ul li, .header-link ul li a {
+    text-decoration: none;
+    color: white;
+    margin: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.header-resume {
+    width: auto;
+    height: 50px;
+    text-align: center;
+    align-content: center;
+    position: absolute;
+    right: 10px;
+}
+.header-resume button {
+    width: 120px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #050315;
+    border: solid 1px aqua;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.fa-arrow-right {
+    margin-left: 5px;
+    border: solid 2px black;
+    font-size: 15px;
+    padding: 4px;
+}
+.fa-arrow-down {
+    margin-left: 5px;
+    border-bottom: solid 3px black;
+}
+.home-page-button button:hover .fa-arrow-right {
+    color: aqua;
+    border: solid 2px aqua;
+}
+.home-page-button button:hover .fa-arrow-down {
+    color: aqua;
+    border-bottom: solid 3px aqua;
+}
+.header-resume button:hover{
+    background-color: aqua;
+    transition: 0.5s ease;
+}
+.header-resume button:hover a {
+    color: #050315;
+}
+
+.header-resume a{
+    text-decoration: none;
+    color: aqua;
+    font-weight: bold;
+}
+
+/*  LANDING PAGE */
+.home-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('/images/gif-raining.gif');
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.home-page h1 {
+    font-size: 100px;
+    margin: 10px;
+    color: white;
+}
+.home-page div {
+    font-size: 25px;
+    color: white;
+}
+.home-page .home-page-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+
+}
+.home-page .home-page-button  button {
+    width: 150px;
+    height: 50px;
+    font-size: 18px;
+    border-radius: 10px;
+    margin: 10px;
+    border: solid 1px aqua;
+    color: #050315;
+    background-color: aqua;
+    font-weight: bold;
+    cursor: pointer;
+}
+.home-page-button button:hover {
+    background-color: #050315;
+    transition: 0.3s ease;
+    color: aqua;
+}
+/*  BRIEF INTRODUCTION */ 
+.intertain {
+    display:  flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: auto;
+    width: 100vw;
+    min-height: 100vh;
+}
+.brief-introduction {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: auto;
+}
+.brief-introduction div, .brief-introduction img {
+    width: 600px;
+    height: 600px;
+    display: flex;
+    margin: 50px;
+    align-items: center;
+    justify-content: center;
+    font-size: 70px;
+    font-weight: bold;
+    color: #050315;
+}
+.intertain .skills-caption {
+    font-size: 50px;
+    position: relative;
+    bottom: 70px;
+    font-weight: bold;
+    margin-top: 100px;
+    color: #050315;
+}
+/*  EXPERTISE PAGE */
+
+.expertise-page {
+    width: 100vw;
+    height: auto;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+}
+.expertise-page div {
+    width: 300px;
+    height: 300px;
+    border: solid 1px white;
+    margin: 10px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0 0 20px rgb(0, 0, 0.1);
+    position: relative;
+    bottom: 50px;
+    z-index: 99;
+    background-color: white;
+    color: #050315;
+}
+.expertise-page div i {
+    font-size: 100px;
+    color: #050315;
+}
+.expertise-page div:hover {
+    transform: translateY(-5%);
+    transition: 0.3s ease;
+}
+
+footer {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: #050315;
+
+}
+footer .footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+footer .footer-container div {
+    width: 500px;
+    height: auto;
+    
+}
+.footer-container-second {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin: 10px;
+}
+.footer-container-second nav {
+    margin: 5px 0px 0px 0px;
+}
