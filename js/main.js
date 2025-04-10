@@ -8,21 +8,23 @@ window.onscroll =() =>{
     }
 }
 
-// let typeAnimation = document.querySelector('#home-page h1 strong')
-// let changes_char = [
-//     "Solutions",
-//     "Maintainance",
-// ]
+
+let typeAnimation = document.querySelector('#home-page h1 strong')
+let changes_char = [
+    "Solutions",
+    "Maintainance",
+]
 // let emptyText = ""
 // let index = 0
 // let insideIndex = 0;
 // function textType(){
 //     let text = changes_char[index]
-//     if(insideIndex >= text.length){
+//     if(insideIndex >= text.length && index != 2){
+//         console.log(index)
 //         index++
 //         insideIndex = 0;
 //         emptyText = ""
-//     }else if(index >= 1){
+//     }else if(index > 1){
 //         index = 0;
 //         insideIndex = 0;
 //         emptyText = ""
@@ -36,3 +38,16 @@ window.onscroll =() =>{
 // setInterval(()=>{
 //     textType()
 // }, 300)
+
+let nav_bar = document.querySelector('.responsive-bar')
+let side_bar = document.querySelector('.side-bar')
+let btn_side = document.querySelector('.btn-sidebar')
+
+nav_bar.onclick = () => {
+    // side_bar.style.transform = 'translateX(0%)'
+    // side_bar.style.transition = '0.3s ease'
+    side_bar.style.display = 'flex'
+}
+btn_side.onclick = () =>{
+    side_bar.style.display = 'none'
+}

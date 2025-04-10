@@ -5,33 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/edcced4a53.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="images/logoCv.png" type="image/x-icon">
     <title>Web Solutions</title>
 </head>
 <body>
     <header id="header-page">
-        <!--IMGAE LOGO-->
-        <!-- <div class="header-logo">
-            <a href="#header-page">
-                <img src="images/logoCv.png" alt="">
-            </a>
-        </div> -->
-        <!--LINKS-->
         <div class="header-link">
             <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Expertise</a></li>
+                <li><a href="#home-page">Home</a></li>
+                <li><a href="#expertise-page">Expertise</a></li>
                 <li><a href="">Services</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="">About</a></li>
             </ul>
         </div>
-        <!--RESUME-->
-<!--         
-        <div class="header-resume">
-            <button><a href="">Contact</a></button>
-            <button><a href="">Resume</a></button>
-        </div> -->
+        <div class="responsive-bar">
+            <i class="fa-solid fa-bars"></i>
+        </div>
     </header>
+    <div class="side-bar">
+        <div class="btn-sidebar">
+            <i class="fa-solid fa-arrow-right"></i>
+        </div>
+        <ul>
+            <li><a href="#home-page">Home</a></li>
+            <li><a href="#expertise-page">Expertise</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="">About</a></li>
+        </ul>
+    </div>
     <div class="home-page" id="home-page">
         <h1>Web <strong>Solutions</strong></h1>
         <div>
@@ -49,25 +52,120 @@
             </div>
             <img src="images/coding-pic2.jpg" alt="">
         </div>
-        <!-- <div class="skills-caption">
-            Expertise
-        </div> -->
     </div>
-    <div class="expertise-page">
-        <div>
-            <i class="fa-brands fa-html5"></i>
-            <h2>HTML</h2>
-            <p>Create and structure for webpages</p>
+    <div class="services">
+        <div class="services-header">
+            <h1>Services</h1>
         </div>
-        <div>
-            <i class="fa-brands fa-css3-alt"></i>
-            <h2>CSS</h2>
-            <p>Design and animation for webpages</p>
+        <div class="services-container">
+            <div class="services1">
+                <h2>Website Development</h2>
+            </div>
+            <div class="services2">
+                <h2>Front-end Development</h2>
+            </div>
+            <div class="services3">
+                <h2>Website Optimization</h2>
+            </div>
+            <div class="services4">
+                <h2>JavaScript Development</h2>
+            </div>
+            <div class="services5">
+                <h2>Website Maintenance</h2>
+            </div>
+            <div class="services6">
+                <h2>Custom Web Features</h2>
+            </div>
+            <div class="services7">
+                <h2>Web Design Consultation</h2>
+            </div>
+            <div class="services8">
+                <h2>Coding Lessons or Mentorship</h2>
+            </div>
         </div>
-        <div>
-            <i class="fa-brands fa-js"></i>
-            <h2>JAVASCRIPT</h2>
-            <p>Add a functions to webpages</p>
+    </div>
+    <div class="expertise-page" id="expertise-page">
+        <div class="expertise-header">
+            <h1>Expertise</h1>
+        </div>
+        <div class="expertise-container">
+            <div>
+                <i class="fa-brands fa-html5"></i>
+                <h2>HTML</h2>
+                <p>Structure for webpages</p>
+            </div>
+            <div>
+                <i class="fa-brands fa-css3-alt"></i>
+                <h2>CSS</h2>
+                <p>Design for webpages</p>
+            </div>
+            <div>
+                <i class="fa-brands fa-js"></i>
+                <h2>JAVASCRIPT</h2>
+                <p>Functions to webpages</p>
+            </div>
+            <div>
+                <i class="fa-brands fa-git-alt"></i>
+                <h2>GIT</h2>
+                <p>Collaboration</p>
+            </div>
+            <div>
+                <i class="fa-brands fa-node"></i>
+                <h2>NODEJS</h2>
+                <p>Javascript runtime</p>
+            </div>
+        </div>
+    </div>
+    <div class="about-page">
+        <div class="about-header">
+            <h1>About Us</h1>
+        </div>
+        <div class="about-container">
+            <div class="about-content">
+                <div class="about-images">
+                    <img src="images/2by2pic.jpg" alt="" width="100%" height="100%" style="border-radius: 50%;">
+                </div>
+                <div class="about-text-container">
+                    <h1>Clark Layos</h1>
+                    <p>Full Stack Web Developer</p>
+                    <div class="resume-download">
+                        <button>About</button>
+                        <a href=""><button>Resume</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="about-content">
+                <div class="about-images">
+                    <img src="images/venes.jpeg" alt=""  width="100%" height="100%" style="border-radius: 50%;">>
+                </div>
+                <div class="about-text-container">
+                    <h1>Venes Ortega</h1>
+                    <p>UI/UX Designer</p>
+                    <div class="resume-download">
+                        <button>About</button>
+                        <a href="#"><button>Resume</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="blog-page">
+        <div class="blog-header">
+            <h1>BLOG</h1>
+        </div>
+        <div class="blog-container">
+            <div>
+                <img src="./images/picF.jpeg" alt="" width="100%" height="100%" style="border-radius: 20px;">
+                <div>PHOTOBOOTH</div>
+            </div>
+            <div>
+                <img src="./images/fb2.jpeg" alt="" width="100%" height="100%" style="border-radius: 20px;">
+                <div>IT DAYS</div>
+            </div>
+            <div>
+                <img src="./images/fb3.jpeg" alt="" width="100%" height="100%" style="border-radius: 20px;">
+                <div>LECTURE TIME</div>
+            </div>
         </div>
     </div>
     <footer>
