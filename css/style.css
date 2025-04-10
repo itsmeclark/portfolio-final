@@ -42,7 +42,7 @@ header {
     font-weight: bold;
     cursor: pointer;
 }
-.header-resume {
+/* .header-resume {
     width: auto;
     height: 50px;
     text-align: center;
@@ -58,7 +58,7 @@ header {
     border: solid 1px aqua;
     margin-right: 10px;
     cursor: pointer;
-}
+} */
 .fa-arrow-right {
     margin-left: 5px;
     border: solid 2px black;
@@ -100,7 +100,7 @@ header {
     align-content: center;
     width: 100vw;
     height: 100vh;
-    background-image: url('/images/gif-raining.gif');
+    background-image: url('/images/eartch.gif');
     position: relative;
     background-size: cover;
     background-position: center;
