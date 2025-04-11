@@ -165,3 +165,73 @@ footer .footer-container div {
 .footer-container-second nav {
     margin: 5px 0px 0px 0px;
 }
+.responsive-bar {
+    color: white;
+    font-size: 35px;
+    display: none;
+}
+@media (max-width: 720px) {
+    .header-link {
+        display: none;
+    }
+    .header {
+        display: flex;
+        justify-content:end;
+        align-items:end;
+        position: relative;
+    }
+    .responsive-bar {
+        display: flex;
+        position: absolute;
+        right: 30px;
+        
+    }
+    .side-bar {
+        display: flex;
+        height: 100%;
+        width: 200px;
+        position: fixed;
+        right: 0px;
+        z-index: 9999;
+        color: white;
+        flex-direction: column;
+        background-color: rgb(12, 12, 12);
+        transform: translateX(200%);
+
+    }
+    .side-bar div {
+        width: 100%;
+        height: 100px;
+        color: black;
+        font-size: 50px;
+        border: solid 1px black;
+        text-align: center;
+        align-content: center;
+    }
+    .side-bar div i{
+        color: black;
+        font-size: 60px;
+        border: none;
+    }
+    .side-bar ul {
+        list-style-type: none;
+        height: 300px;
+        text-align: center;
+    }
+    .side-bar ul li {
+        width: 100%;
+        height: 50px;
+        border-bottom: solid 1px black;
+        text-align: center;
+        align-content: center;
+        margin: 10px 0px 10px 0px;
+    }
+    .side-bar ul li a {
+        text-decoration: none;
+        color: white;
+    }
+    .side-bar div i {
+        color: aqua;
+    }
+
+}
