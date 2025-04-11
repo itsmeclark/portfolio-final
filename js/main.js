@@ -12,32 +12,34 @@ window.onscroll =() =>{
 let typeAnimation = document.querySelector('#home-page h1 strong')
 let changes_char = [
     "Solutions",
-    "Maintainance",
+    "Developer",
+    "Design"
 ]
-// let emptyText = ""
-// let index = 0
-// let insideIndex = 0;
-// function textType(){
-//     let text = changes_char[index]
-//     if(insideIndex >= text.length && index != 2){
-//         console.log(index)
-//         index++
-//         insideIndex = 0;
-//         emptyText = ""
-//     }else if(index > 1){
-//         index = 0;
-//         insideIndex = 0;
-//         emptyText = ""
-//     }
-//     else{
-//         emptyText += text[insideIndex]
-//         typeAnimation.textContent = emptyText;
-//         insideIndex++
-//     }
-// }
-// setInterval(()=>{
-//     textType()
-// }, 300)
+let emptyText = ""
+let index = 0
+let insideIndex = 0;
+function textType(){
+    let text = changes_char[index]
+    if(insideIndex >= text.length && index != 3){
+        console.log(index)
+        index++
+        insideIndex = 0;
+        emptyText = ""
+    }
+    else{
+        emptyText += text[insideIndex]
+        typeAnimation.textContent = emptyText;
+        insideIndex++
+    }
+    if(index > 2){
+        index = 0;
+        insideIndex = 0;
+        emptyText = ""
+    }
+}
+setInterval(()=>{
+    textType()
+}, 300)
 
 let nav_bar = document.querySelector('.responsive-bar')
 let header_bar = document.querySelector('#header-page')
@@ -123,10 +125,10 @@ let oberserve = new IntersectionObserver((entries)=>{
                 document.querySelector(".brief-introduction img").style.transform = 'translateX(0%)'
             }
             else{
-                document.querySelector('#about-content-clark').style.transform  = 'translateX(-200%)'
-                document.querySelector('#about-content-venes').style.transform  = 'translateX(200%)'
-                document.querySelector(".brief-introduction div").style.transform = 'translateX(-200%)'
-                document.querySelector(".brief-introduction img").style.transform = 'translateX(200%)'
+                document.querySelector('#about-content-clark').style.transform  = 'translateX(-300%)'
+                document.querySelector('#about-content-venes').style.transform  = 'translateX(300%)'
+                document.querySelector(".brief-introduction div").style.transform = 'translateX(-300%)'
+                document.querySelector(".brief-introduction img").style.transform = 'translateX(300%)'
             }
         }
     })

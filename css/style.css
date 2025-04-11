@@ -311,19 +311,19 @@ header {
     border-radius: 20px;
 }
 #about-content-clark {
-    transform: translateX(-200%);
+    transform: translateX(-300%);
     transition: 0.5s ease;
 }
 #about-content-venes {
-    transform: translateX(200%);
+    transform: translateX(300%);
     transition: 0.5s ease;
 }
 .brief-introduction div {
-    transform: translateX(-200%);
+    transform: translateX(-300%);
     transition: 0.5s ease;
 }
 .brief-introduction img {
-    transform: translateX(200%);
+    transform: translateX(300%);
     transition: 0.5s ease;
 }
 .about-images {
