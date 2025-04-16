@@ -107,7 +107,8 @@ let listDoc = [
     document.querySelector('#home-page'),
     document.querySelector('#services'),
     document.querySelector('#expertise-page'),
-    document.querySelector("#about-page")
+    document.querySelector("#about-page"),
+    document.querySelector("#blog-page")
 
 ]
 let oberserve = new IntersectionObserver((entries)=>{
@@ -115,20 +116,121 @@ let oberserve = new IntersectionObserver((entries)=>{
         if(entry.isIntersecting){
             const section = entry.target
             const id = section.id
+            console.log(id)
             history.replaceState(null, null, `#${id}`)
 
             if(id === "about-page"){
                 document.querySelector('#about-content-clark').style.transform  = 'translateX(0%)'
                 document.querySelector('#about-content-venes').style.transform  = 'translateX(0%)'
             }else if(id === "intertain"){
+                // BRIEF TEXT
                 document.querySelector(".brief-introduction div").style.transform = 'translateX(0%)'
                 document.querySelector(".brief-introduction img").style.transform = 'translateX(0%)'
-            }
-            else{
+
+                /// ABOUT PAGE
+                document.querySelector('#about-content-clark').style.transform  = 'translateX(-300%)'
+                document.querySelector('#about-content-venes').style.transform  = 'translateX(300%)'
+
+                 // HOME  NAV BAR
+                document.querySelectorAll('.header-link ul li nav')[0].style.borderBottom = 'solid 3px black'
+                document.querySelectorAll('.header-link ul li nav')[0].style.width = '100px'
+                document.querySelectorAll('.header-link ul li nav a')[0].style.color = 'white'
+
+                // SERVICES  NAV BAR
+                document.querySelectorAll('.header-link ul li nav')[2].style.borderBottom = 'solid 3px black'
+                document.querySelectorAll('.header-link ul li nav')[2].style.width = '100px'
+                document.querySelectorAll('.header-link ul li nav a')[2].style.color = 'white'
+
+                // EXPERTISE  NAV BAR
+                document.querySelectorAll('.header-link ul li nav')[1].style.borderBottom = 'solid 3px black'
+                document.querySelectorAll('.header-link ul li nav')[1].style.width = '100px'
+                document.querySelectorAll('.header-link ul li nav a')[1].style.color = 'white'
+
+            }else if(id === 'home-page'){
                 document.querySelector('#about-content-clark').style.transform  = 'translateX(-300%)'
                 document.querySelector('#about-content-venes').style.transform  = 'translateX(300%)'
                 document.querySelector(".brief-introduction div").style.transform = 'translateX(-300%)'
                 document.querySelector(".brief-introduction img").style.transform = 'translateX(300%)'
+
+                // HOME  NAV BAR
+                document.querySelectorAll('.header-link ul li nav')[0].style.borderBottom = 'solid 3px aqua'
+                document.querySelectorAll('.header-link ul li nav')[0].style.width = '100px'
+                document.querySelectorAll('.header-link ul li nav a')[0].style.color = 'aqua'
+
+
+                // EXPERTISE  NAV BAR
+                document.querySelectorAll('.header-link ul li nav')[1].style.borderBottom = 'solid 3px black'
+                document.querySelectorAll('.header-link ul li nav')[1].style.width = '100px'
+                document.querySelectorAll('.header-link ul li nav a')[1].style.color = 'white'
+
+            }else if(id === 'services'){
+                //  ABOUT PAGE
+                document.querySelector('#about-content-clark').style.transform  = 'translateX(-300%)'
+                document.querySelector('#about-content-venes').style.transform  = 'translateX(300%)'
+
+                // BRIEF TEXT
+                document.querySelector(".brief-introduction div").style.transform = 'translateX(-300%)'
+                document.querySelector(".brief-introduction img").style.transform = 'translateX(300%)'
+
+                 // HOME  NAV BAR
+                 document.querySelectorAll('.header-link ul li nav')[0].style.borderBottom = 'solid 3px black'
+                 document.querySelectorAll('.header-link ul li nav')[0].style.width = '100px'
+                 document.querySelectorAll('.header-link ul li nav a')[0].style.color = 'white'
+ 
+
+                // SERVICES  NAV BAR
+                document.querySelectorAll('.header-link ul li nav')[2].style.borderBottom = 'solid 3px aqua'
+                document.querySelectorAll('.header-link ul li nav')[2].style.width = '100px'
+                document.querySelectorAll('.header-link ul li nav a')[2].style.color = 'aqua'
+
+                // EXPERTISE  NAV BAR
+                document.querySelectorAll('.header-link ul li nav')[1].style.borderBottom = 'solid 3px black'
+                document.querySelectorAll('.header-link ul li nav')[1].style.width = '100px'
+                document.querySelectorAll('.header-link ul li nav a')[1].style.color = 'white'
+
+            }else if(id === 'expertise-page'){
+
+                // HOME  NAV BAR
+                document.querySelectorAll('.header-link ul li nav')[0].style.borderBottom = 'solid 3px black'
+                document.querySelectorAll('.header-link ul li nav')[0].style.width = '100px'
+                document.querySelectorAll('.header-link ul li nav a')[0].style.color = 'white'
+
+
+                // EXPERTISE  NAV BAR
+                document.querySelectorAll('.header-link ul li nav')[1].style.borderBottom = 'solid 3px aqua'
+                document.querySelectorAll('.header-link ul li nav')[1].style.width = '100px'
+                document.querySelectorAll('.header-link ul li nav a')[1].style.color = 'aqua'
+
+                // SERVICES  NAV BAR
+                document.querySelectorAll('.header-link ul li nav')[2].style.borderBottom = 'solid 3px black'
+                document.querySelectorAll('.header-link ul li nav')[2].style.width = '100px'
+                document.querySelectorAll('.header-link ul li nav a')[2].style.color = 'white'
+
+                // BLOG  NAV BAR
+                document.querySelectorAll('.header-link ul li nav')[4].style.borderBottom = 'solid 3px black'
+                document.querySelectorAll('.header-link ul li nav')[4].style.width = '100px'
+                document.querySelectorAll('.header-link ul li nav a')[4].style.color = 'white'
+            }else if(id === 'blog-page'){
+                // BLOG  NAV BAR
+                document.querySelectorAll('.header-link ul li nav')[4].style.borderBottom = 'solid 3px aqua'
+                document.querySelectorAll('.header-link ul li nav')[4].style.width = '100px'
+                document.querySelectorAll('.header-link ul li nav a')[4].style.color = 'aqua'
+
+                  // HOME  NAV BAR
+                document.querySelectorAll('.header-link ul li nav')[0].style.borderBottom = 'solid 3px black'
+                document.querySelectorAll('.header-link ul li nav')[0].style.width = '100px'
+                document.querySelectorAll('.header-link ul li nav a')[0].style.color = 'white'
+
+
+                // EXPERTISE  NAV BAR
+                document.querySelectorAll('.header-link ul li nav')[1].style.borderBottom = 'solid 3px black'
+                document.querySelectorAll('.header-link ul li nav')[1].style.width = '100px'
+                document.querySelectorAll('.header-link ul li nav a')[1].style.color = 'white'
+
+                // SERVICES  NAV BAR
+                document.querySelectorAll('.header-link ul li nav')[2].style.borderBottom = 'solid 3px black'
+                document.querySelectorAll('.header-link ul li nav')[2].style.width = '100px'
+                document.querySelectorAll('.header-link ul li nav a')[2].style.color = 'white'
             }
         }
     })

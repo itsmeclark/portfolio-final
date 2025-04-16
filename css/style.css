@@ -42,6 +42,24 @@ header {
     font-weight: bold;
     cursor: pointer;
 }
+.header-link ul li{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    width: 100px;
+    height: 30px;
+    
+}
+.header-link ul li nav {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 0px;
+    height: 30px;
+    border: solid 3px transparent;
+}
+
+
 .responsive-bar {
     color: white;
     font-size: 35px;
@@ -183,6 +201,7 @@ header {
 
 /* SERVICES */
 .services {
+    padding-top: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -230,7 +249,7 @@ header {
     flex-wrap: wrap;
     height: auto;
     width: 100vw;
-    padding-top: 50px;
+    padding-top: 150px;
 }
 .expertise-page .expertise-header {
     font-size: 25px;
@@ -365,6 +384,7 @@ header {
     flex-wrap: wrap;
     width: 100vw;
     height: auto;
+    padding-top: 100px;
 }
 .blog-header {
     font-size: 25px;

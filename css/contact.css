@@ -46,6 +46,30 @@ header {
     font-weight: bold;
     cursor: pointer;
 }
+.header-link ul li{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    width: 100px;
+    height: 30px;
+    
+}
+.header-link ul li nav {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 0px;
+    height: 30px;
+    border: solid 3px transparent;
+}
+.header-link ul li .contact-nav {
+    border-bottom: aqua solid 3px ;
+    width: 100px;
+}
+.header-link ul li .contact-nav a {
+    color: aqua;
+}
+
 .details {
     width: 400px;
     height: 500px;
